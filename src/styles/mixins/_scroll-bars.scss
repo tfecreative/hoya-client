@@ -1,0 +1,33 @@
+/// Credit:
+/// @author Hugo Giraudel
+/// https://css-tricks.com/snippets/sass/custom-scrollbars-mixin/
+
+/// @param {Length} $size
+/// @param {Color} $foreground-color
+/// @param {Color} $background-color
+@mixin scrollbars(
+  $size,
+  $foreground-color,
+  $background-color: mix($foreground-color, white, 50%)
+) {
+  // For Google Chrome
+  ::-webkit-scrollbar {
+    width: $size;
+    height: $size;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  // For Internet Explorer
+  body {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}

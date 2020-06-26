@@ -1,0 +1,10 @@
+// Borders and shadows
+$border-radius: 4px;
+$border-width: 1px;
+$border-width-thick: 2px;
+$border-style: solid;
+$border: $border-width $border-style;
+$border-thick: $border-width-thick $border-style;
+$button-border-radius: 2px;
+$input-border-radius: 2px;
+$box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
