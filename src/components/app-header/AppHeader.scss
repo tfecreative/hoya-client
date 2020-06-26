@@ -1,0 +1,18 @@
+@import "variables/colors";
+@import "variables/sizes";
+@import "variables/typography";
+
+.app-header {
+  display: flex;
+  flex: 1;
+  background-color: pink;
+  height: 60px;
+  padding: $spacing-sm;
+  font-size: $font-size-xxxl;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
