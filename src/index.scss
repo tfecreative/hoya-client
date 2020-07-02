@@ -2,6 +2,8 @@
 @import "variables/sizes";
 @import "variables/typography";
 
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css");
+
 html {
   font-size: 62.5% !important;
 }
@@ -15,6 +17,8 @@ body {
   font-family: $sans-serif;
   font-weight: $font-weight-normal;
   -webkit-text-size-adjust: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -30,18 +34,4 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-.site-content {
-  @include themed() {
-    color: t($text);
-    background: t($bg);
-  }
-
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  margin: 0 $spacing-md;
-  min-height: 100%;
-  flex-grow: 1;
 }

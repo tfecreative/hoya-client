@@ -4,15 +4,24 @@
 
 .app-header {
   display: flex;
-  flex: 1;
-  background-color: pink;
-  height: 60px;
   padding: $spacing-sm;
-  font-size: $font-size-xxxl;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+
+  .app-title {
+    margin: 0 0 0 $spacing-sm;
+    padding: 0;
+    font-weight: 400;
+    font-size: $font-size-xxxl;
+  }
 
   &:hover {
     cursor: pointer;
+  }
+
+  .hoya-plant {
+    width: 125px;
+    position: absolute;
+    right: -16px;
+    top: 0px;
   }
 }

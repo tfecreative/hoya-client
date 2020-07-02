@@ -1,0 +1,36 @@
+@import "variables/colors";
+@import "variables/sizes";
+@import "variables/typography";
+@import "mixins/breakpoints";
+
+.navbar {
+  display: flex;
+  padding: $spacing-sm;
+}
+
+.navbar-menu {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0 0 0 $spacing-lg;
+  padding: 0;
+
+  @include xs {
+    flex-direction: row;
+  }
+
+  &__item {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-semibold;
+    text-transform: uppercase;
+
+    &:not(:last-of-type) {
+      margin-bottom: $spacing-sm;
+    }
+
+    @include xs {
+      margin-bottom: 0;
+      margin-right: $spacing-lg;
+    }
+  }
+}

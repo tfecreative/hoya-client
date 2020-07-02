@@ -1,0 +1,19 @@
+@import "variables/colors";
+@import "variables/sizes";
+@import "variables/typography";
+
+.app-footer {
+  flex-shrink: 0;
+  padding: $spacing-sm;
+  position: relative;
+  background-color: #222a01;
+  color: #fffc97;
+  height: 36px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: $font-size-lg;
+
+  .footer-icon {
+    font-size: $font-size-xxl;
+  }
+}
