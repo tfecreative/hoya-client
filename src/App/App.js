@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { AppHeader } from "components/app-header";
-import { AppFooter } from "components/app-footer";
-import { AppNavbar } from "components/app-navbar";
+import { AppHeader } from "App/components/app-header";
+import { AppFooter } from "App/components/app-footer";
+import { AppNavbar } from "App/components/app-navbar";
 import { getPlants } from "services/api";
 import "./App.scss";
 import Home from "Home/Home.js";
