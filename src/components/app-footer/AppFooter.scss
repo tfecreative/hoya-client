@@ -3,11 +3,11 @@
 @import "variables/typography";
 
 .app-footer {
+  display: flex;
   flex-shrink: 0;
   padding: $spacing-sm;
   position: relative;
-  background-color: #222a01;
-  color: #fffc97;
+  background-color: #dee2e6;
   height: 36px;
   justify-content: space-between;
   align-items: center;

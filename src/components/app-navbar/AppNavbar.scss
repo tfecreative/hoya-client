@@ -23,14 +23,22 @@
     font-size: $font-size-lg;
     font-weight: $font-weight-semibold;
     text-transform: uppercase;
+    padding: $spacing-xxs;
+
+    &:hover {
+      cursor: pointer;
+    }
 
     &:not(:last-of-type) {
-      margin-bottom: $spacing-sm;
+      margin-bottom: $spacing-xs;
     }
 
     @include xs {
-      margin-bottom: 0;
       margin-right: $spacing-lg;
+
+      &:not(:last-of-type) {
+        margin-bottom: 0;
+      }
     }
   }
 }

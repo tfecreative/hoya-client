@@ -4,7 +4,9 @@ import "./AppFooter.scss";
 function AppFooter() {
   return (
     <footer className="app-footer">
-      <div>© tfeCreative</div>
+      <div>
+        © <a href="https://tfecreative.com">tfeCreative</a>
+      </div>
       <i class="footer-icon fab fa-github" aria-hidden="true"></i>
     </footer>
   );
