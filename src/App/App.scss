@@ -1,6 +1,7 @@
 @import "variables/colors";
 @import "variables/sizes";
 @import "variables/typography";
+@import "mixins/breakpoints";
 
 .App {
   height: 100vh;
@@ -12,8 +13,12 @@
   background-image: url("../hoya-plant.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 102% 0%;
+  background-position: 110% 0%;
   background-size: 125px 218px;
+
+  @include xs {
+    background-position: 102% 0%;
+  }
 }
 
 .site-content {
@@ -24,8 +29,12 @@
 
   flex-grow: 1;
   flex-shrink: 0;
-  margin: $spacing-xl $spacing-xxl;
+  margin: $spacing-lg;
   padding: $spacing-sm;
+
+  @include xs {
+    margin: $spacing-xl $spacing-xxl;
+  }
 }
 
 .test {

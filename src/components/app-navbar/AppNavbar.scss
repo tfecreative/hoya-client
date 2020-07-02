@@ -41,4 +41,16 @@
       }
     }
   }
+
+  .navbar-menu-link {
+    text-decoration: none;
+
+    &.is-active {
+      color: pink;
+    }
+  }
+
+  a:-webkit-any-link {
+    text-decoration: none;
+  }
 }

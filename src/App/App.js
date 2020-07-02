@@ -1,9 +1,12 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { AppHeader } from "components/app-header";
 import { AppFooter } from "components/app-footer";
 import { AppNavbar } from "components/app-navbar";
 import { getPlants } from "services/api";
 import "./App.scss";
+import Home from "Home/Home.js";
+import About from "About/About.js";
 
 class App extends Component {
   loadPlants = async () => {
@@ -22,14 +25,19 @@ class App extends Component {
 
   render() {
     return (
-      <div id="app" className="App theme--light">
-        <AppHeader />
-        <AppNavbar />
-        <div className="site-content">
-          <div className="test">Welcome to Hoya.</div>
+      <Router>
+        <div id="app" className="App theme--light">
+          <AppHeader />
+          <AppNavbar />
+          <div className="site-content">
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/about" component={About} />
+            </Switch>
+          </div>
+          <AppFooter />
         </div>
-        <AppFooter />
-      </div>
+      </Router>
     );
   }
 }

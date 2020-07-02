@@ -7,7 +7,7 @@ function AppFooter() {
       <div>
         © <a href="https://tfecreative.com">tfeCreative</a>
       </div>
-      <i class="footer-icon fab fa-github" aria-hidden="true"></i>
+      <i className="footer-icon fab fa-github" aria-hidden="true"></i>
     </footer>
   );
 }
