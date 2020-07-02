@@ -29,7 +29,7 @@
 
   flex-grow: 1;
   flex-shrink: 0;
-  margin: $spacing-lg;
+  margin: $spacing-md $spacing-lg;
   padding: $spacing-sm;
 
   @include xs {
