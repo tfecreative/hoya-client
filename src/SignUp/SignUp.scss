@@ -1,0 +1,34 @@
+@import "variables/typography";
+@import "variables/sizes";
+
+.sign-up {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.sign-up-form {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+
+  &:not(:last-of-type) {
+    margin-bottom: $spacing-md;
+  }
+}
+
+.form-label {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
+}
+
+.form-actions {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
