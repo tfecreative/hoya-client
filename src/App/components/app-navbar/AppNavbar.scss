@@ -45,8 +45,14 @@
   .navbar-menu-link {
     text-decoration: none;
 
+    @include themed() {
+      color: t($link);
+    }
+
     &.is-active {
-      color: pink;
+      @include themed() {
+        color: t($link-active);
+      }
     }
   }
 
