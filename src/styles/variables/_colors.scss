@@ -1,11 +1,23 @@
 $bg: "bg";
 $text: "text";
+$btn-primary-fg: "btn-primary-fg";
+$btn-primary-bg: "btn-primary-bg";
+$link: "link";
+$link-active: "link-active";
 
 $bg--light: #ffffff;
 $text--light: #000000;
+$btn-primary-bg--light: #1b4332;
+$btn-primary-fg--light: #ffffff;
+$link--light: #000000;
+$link-active--light: #1b4332;
 
 $bg--dark: #333333;
 $text--dark: #25b26f;
+$btn-primary-bg--dark: #95d5b2;
+$btn-primary-fg--dark: #000000;
+$link--dark: #000000;
+$link-active--dark: #c70502;
 
 $gray-100: #f8f9fa;
 $gray-200: #dee2e6;
@@ -17,6 +29,8 @@ $themes: (
   light: (
     bg: $bg--light,
     text: $text--light,
+    btn-primary-bg: $btn-primary-bg--light,
+    btn-primary-fg: $btn-primary-fg--light,
   ),
   dark: (
     bg: $bg--dark,

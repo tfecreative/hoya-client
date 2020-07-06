@@ -1,0 +1,19 @@
+@import "variables/colors";
+@import "variables/sizes";
+@import "variables/typography";
+
+.btn {
+  outline: none;
+  border: 1px solid black;
+  padding: $spacing-xs $spacing-sm;
+  font-size: $font-size-lg;
+  font-weight: $font-weight-bold;
+  min-width: 100px;
+}
+
+.btn-primary {
+  @include themed() {
+    color: t($btn-primary-fg);
+    background: t($btn-primary-bg);
+  }
+}
