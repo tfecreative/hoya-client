@@ -1,3 +1,11 @@
+@import "variables/typography";
+
 .about {
   display: flex;
+}
+
+.card {
+  &__section {
+    font-size: $font-size-lg;
+  }
 }

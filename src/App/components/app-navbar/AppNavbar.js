@@ -27,15 +27,6 @@ function AppNavbar() {
         </li>
         <li className="navbar-menu__item">
           <NavLink
-            to="/community"
-            className="navbar-menu-link"
-            activeClassName="is-active"
-          >
-            Community
-          </NavLink>
-        </li>
-        <li className="navbar-menu__item">
-          <NavLink
             to="/about"
             className="navbar-menu-link"
             activeClassName="is-active"

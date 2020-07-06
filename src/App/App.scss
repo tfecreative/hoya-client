@@ -29,14 +29,10 @@
 
   flex-grow: 1;
   flex-shrink: 0;
-  margin: $spacing-md $spacing-lg;
+  margin: $spacing-md;
   padding: $spacing-sm;
 
   @include xs {
     margin: $spacing-xl $spacing-xxl;
   }
-}
-
-.test {
-  font-size: $font-size-lg;
 }

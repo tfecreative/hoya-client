@@ -10,7 +10,7 @@
   .app-title {
     margin: 0 0 0 $spacing-sm;
     padding: 0;
-    font-weight: 400;
+    font-weight: $font-weight-semibold;
     font-size: $font-size-xxxl;
 
     &:hover {
