@@ -7,7 +7,13 @@ function AppFooter() {
       <div>
         © <a href="https://tfecreative.com">tfeCreative</a>
       </div>
-      <i className="footer-icon fab fa-github" aria-hidden="true"></i>
+      <a
+        href="https://github.com/tfecreative"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i className="footer-icon fab fa-github" aria-hidden="true"></i>
+      </a>
     </footer>
   );
 }
