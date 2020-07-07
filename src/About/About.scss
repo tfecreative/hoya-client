@@ -2,10 +2,5 @@
 
 .about {
   display: flex;
-}
-
-.card {
-  &__section {
-    font-size: $font-size-lg;
-  }
+  flex-direction: column;
 }
