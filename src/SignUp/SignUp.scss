@@ -1,34 +1,16 @@
+@import "variables/colors";
 @import "variables/typography";
 @import "variables/sizes";
+@import "mixins/breakpoints";
+@import "elements/forms";
 
 .sign-up {
   display: flex;
   flex: 1;
-  flex-direction: column;
+  justify-content: center;
 }
 
 .sign-up-form {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-
-  &:not(:last-of-type) {
-    margin-bottom: $spacing-md;
-  }
-}
-
-.form-label {
-  font-size: $font-size-lg;
-  font-weight: $font-weight-semibold;
-}
-
-.form-actions {
-  display: flex;
-  flex: 1;
-  justify-content: flex-end;
+  width: 280px;
+  padding: $spacing-sm;
 }

@@ -1,0 +1,40 @@
+@import "variables/colors";
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+
+  &:not(:last-of-type) {
+    margin-bottom: $spacing-md;
+  }
+}
+
+.form-label {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
+  margin-bottom: $spacing-xxs;
+}
+
+.form-actions {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.form-control {
+  outline: 0;
+  border: 1px solid $gray-400;
+  padding: $spacing-xs $spacing-sm;
+
+  &:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 0;
+  }
+}
