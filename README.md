@@ -1,5 +1,8 @@
-# hoya-client
+# Hoya Client 🌱
 
+
+## Description
+Hoya is an online community for plant enthusiasts and collectors to catalog and share their plants.
 
 
 ## Run

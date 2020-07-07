@@ -8,6 +8,7 @@ import "./App.scss";
 import Home from "Home/Home.js";
 import About from "About/About.js";
 import SignUp from "SignUp/SignUp.js";
+import Garden from "Garden/Garden.js";
 
 class App extends Component {
   loadPlants = async () => {
@@ -34,6 +35,7 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/about" component={About} />
+              <Route exact path="/garden" component={Garden} />
               <Route exact path="/sign-up" component={SignUp}></Route>
             </Switch>
           </div>

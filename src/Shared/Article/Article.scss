@@ -1,0 +1,11 @@
+@import "variables/typography";
+@import "variables/sizes";
+
+.article {
+  &__section {
+    font-size: $font-size-lg;
+  }
+  &:not(:last-of-type) {
+    margin-bottom: $spacing-lg;
+  }
+}
